@@ -46,7 +46,7 @@ try:
                 print("Warning: Skipping an empty row.")
 except FileNotFoundError:
     print("Error: File not found.")
-except Exception as e:                                 # Finish try except
+except Exception as e:                                
     print(f"An unexpected error occurred: {e}") 
 
 # Calculate the average change and output the results
