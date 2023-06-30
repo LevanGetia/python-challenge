@@ -57,10 +57,10 @@ results.append(f"Winner: {winner}")
 results.append("-------------------------")
 
 # Output results to console
-for line in results:
-    print(line)
+for final in results:
+    print(final)
 
 # Output results to a text file
 with open('election_outcome.txt', 'w') as output_file:
-    for line in results:
-        output_file.write(line + '\n')
+    for final in results:
+        output_file.write(final + '\n')

@@ -46,8 +46,8 @@ try:
                 print("Warning: Skipping an empty row.")
 except FileNotFoundError:
     print("Error: File not found.")
-except Exception as e:
-    print(f"An unexpected error occurred: {e}")
+except Exception as e:                                 # Finish try except
+    print(f"An unexpected error occurred: {e}") 
 
 # Calculate the average change and output the results
 if total_months > 0:
@@ -63,5 +63,5 @@ if total_months > 0:
     with open ('financial_stats.txt', 'w') as output_file:
         output_file.write(results)
 else:
-    print("No data to analyze.")
+    print("No data")
 
