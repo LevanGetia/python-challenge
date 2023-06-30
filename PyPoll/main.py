@@ -61,6 +61,6 @@ for final in results:
     print(final)
 
 # Output results to a text file
-with open('election_outcome.txt', 'w') as output_file:
+with open('Analysis/election_outcome.txt', 'w') as output_file:
     for final in results:
         output_file.write(final + '\n')
